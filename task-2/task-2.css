@@ -4,6 +4,8 @@ body{
     align-items: center;
     justify-content: space-evenly;
     background-color:white;
+    width: 100%;
+    height: auto;
 }
 header{
     position:fixed;
@@ -18,7 +20,7 @@ header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 }
 header .logo img{
     width: 15%;
@@ -36,10 +38,10 @@ header nav ul li a {
     color: black;
     font-weight: bold;
     font-size: 30px;
-   
 }
 header nav ul li a:hover {
-    color:red; 
+    color: palevioletred;
+    text-decoration: underline; 
 }
 .home{
     width: 90%;
@@ -76,8 +78,8 @@ header nav ul li a:hover {
     font-weight: bold;
     font-style: italic;
     position: relative;
-    top:75%;
-    left: 40%;
+    top:70%;
+    left: 20%;
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -85,15 +87,16 @@ header nav ul li a:hover {
 .overlay .icons{
     position: relative;
     top:85%;
-    left: 40%;
+    left: 20%;
 }
 .overlay .icons i{
     transition: trasnform 1.5s ease-in-out;
+    color: black;
 }
 .overlay .icons i:hover{
-    color: red;
+    color: palevioletred;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 .overlay .profile{
     width: 50%;
@@ -104,8 +107,8 @@ header nav ul li a:hover {
     height: auto;
     border-radius: 100%;
     position: relative;
-    top: 65%;
-    left: 20%;
+    top: 60%;
+    left: 30%;
     transition: trasnform 1.5s ease-in-out;
 }
 .overlay .profile img:hover{
@@ -149,14 +152,14 @@ header nav ul li a:hover {
 .about .container button{
     width: 100px;
     height: 40px;
-    border: solid 2px black;
-    background-color: #003152;
-    color: white;
+    border: solid 3px black;
+    color: black;
 }
 .about .container button:hover{
-    background-color: white;
+    background-color: palevioletred;
     cursor: pointer;
     color: black;
+    font-size: 16px;
 }
 .skills .container{
     display: flex;
@@ -269,18 +272,17 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-}
-#msg{
-    width: 80%;
-    height: 20%;
+    margin-top: 10px;
 }
 #submit{
     width: 15%;
     height: 7%;
 }
 #submit:hover{
-    background-color: red;
+    background-color: palevioletred;
     color: white;
+    font-size: 20px;
+    color: black;
     border: solid 3px black;
 }
 .contact {
@@ -312,15 +314,30 @@ header nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 3px;
 }
-.footer {
-    background-color: red;
+footer {
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 5px;
     width: 100%;
 }
 
-.footer.container {
+footer.container {
     width: 100%;
     margin: auto;
 }
+
+/* @keyframes headercontainer {
+    from { background-color: red; }
+    to { background-color: yellow; }
+  }
+  
+ 
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+   */
