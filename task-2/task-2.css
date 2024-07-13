@@ -1,52 +1,60 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color:white;
+    background-color: white;
     width: 100%;
     height: auto;
     box-sizing: border-box;
     margin: 0;
 }
-header{
-    position:fixed;
+
+header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0%;
-    padding:0%; 
-    background-color: white; 
+    padding: 0%;
+    background-color: white;
     z-index: 999;
 }
-header .container{
+
+header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
-header .logo img{
+
+header .logo img {
     width: 15%;
     height: 100%;
 }
-header nav ul{
-    list-style:none;
+
+header nav ul {
+    list-style: none;
     display: flex;
 }
+
 header nav ul li {
     margin-left: 20px;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 30px;
 }
+
 header nav ul li a:hover {
     color: palevioletred;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
-.home{
+
+.home {
     width: 50px;
     height: auto;
     margin-top: 80px;
@@ -54,76 +62,88 @@ header nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
 }
-.home .container{
+
+.home .container {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#video{
+
+#video {
     top: 0%;
     min-width: 70%;
     max-width: 100%;
     right: 0;
     position: absolute;
 }
-.overlay{
+
+.overlay {
     display: flex;
     position: absolute;
     color: black;
 }
-.overlay .title{
+
+.overlay .title {
     width: 20%;
     height: auto;
 }
-.overlay .title h3{
+
+.overlay .title h3 {
     font-size: 60px;
     font-weight: bold;
     font-style: oblique;
     position: relative;
-    top:60%;
+    top: 70%;
     left: 20%;
     margin: 0%;
     display: flex;
     flex-direction: column;
 }
-.overlay .icons{
+.overlay .icons {
     position: relative;
-    top:75%;
+    top: 85%;
     left: 20%;
 }
-.overlay .icons i{
+.overlay .icons a{
+    text-decoration: none;
+    gap: 20%;
+}
+.overlay .icons i {
     transition: trasnform 1.5s ease-in-out;
     color: black;
 }
-.overlay .icons i:hover{
+.overlay .icons i:hover {
     color: palevioletred;
     cursor: pointer;
     transform: scale(1.5);
 }
-.overlay .profile{
+.overlay .profile {
     width: 50%;
     height: auto;
 }
-.overlay .profile img{
+.overlay .profile img {
     width: 60%;
     height: auto;
     border-radius: 100%;
     position: relative;
-    top: 60%;
+    top: 70%;
     left: 30%;
     transition: trasnform 1.5s ease-in-out;
 }
-.overlay .profile img:hover{
-    border: solid 3px gray;
+
+.overlay .profile img:hover {
+    border: solid 3px black;
     transform: scale(1.1);
 }
-.about{
+
+.about {
     margin-top: 625px;
     width: 90%;
     height: auto;
 }
-.about .container{
+
+.about .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -131,10 +151,11 @@ header nav ul li a:hover {
     border: solid 5px black;
     padding: 2%;
 }
-.about h3{
+
+.about h3 {
     font-size: 60px;
     font-weight: bold;
-    font-style: italic ;
+    font-style: italic;
     color: black;
     margin-top: 60px;
     display: flex;
@@ -142,7 +163,8 @@ header nav ul li a:hover {
     align-items: center;
     gap: 30px;
 }
-.about .container p{
+
+.about .container p {
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -152,32 +174,37 @@ header nav ul li a:hover {
     align-items: center;
     margin-top: 0%;
 }
-.about .container button{
+
+.about .container button {
     width: 100px;
     height: 40px;
     border: solid 3px black;
     color: black;
 }
-.about .container button:hover{
+
+.about .container button:hover {
     background-color: palevioletred;
     cursor: pointer;
     color: black;
     font-size: 16px;
 }
-.skills .container{
+
+.skills .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.skills .container h3{
+
+.skills .container h3 {
     font-size: 60px;
     font-weight: bold;
-    font-style: italic ;
+    font-style: italic;
     color: black;
     margin-top: 60px;
 }
-.skills .skill-list{
+
+.skills .skill-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
@@ -185,77 +212,90 @@ header nav ul li a:hover {
     padding: 2%;
     transition: trasnform 1.5s ease-in-out;
 }
-.skills .skill-list > div:hover{
+
+.skills .skill-list>div:hover {
     transform: scale(1.1);
 }
-.skill-list .skill{
+
+.skill-list .skill {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 4%;
 }
+
 .skill-list .skill img {
     width: 40%;
     height: auto;
 }
-.skill-list .skill p{
+
+.skill-list .skill p {
     font-size: 25px;
     font-weight: bold;
 }
-.project{
+
+.project {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 98%;
 }
-.project .container{
+
+.project .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.project .container h2{
+
+.project .container h2 {
     font-size: 60px;
     font-weight: bold;
-    font-style: italic ;
+    font-style: italic;
     color: black;
     margin-top: 60px;
 }
-.project .projects{
+
+.project .projects {
     display: grid;
     justify-content: center;
-    align-items:first baseline;
-    grid-template-columns: repeat(3, 1fr);
+    align-items: first baseline;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
     gap: 40px;
 }
-.projects .work{
+
+.projects .work {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.projects .work img{
-    width: 30%;
+
+.projects .work img {
+    width: 40%;
     height: auto;
 }
-.projects .work p{
+
+.projects .work p {
     width: 55%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .GIC {
-   width: 95%; 
-   display: flex;
-   flex-direction: column;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
 }
-.GIC h3{
+
+.GIC h3 {
     font-size: 60px;
     font-weight: bold;
-    font-style: italic ;
+    font-style: italic;
     color: black;
     display: flex;
     justify-content: center;
@@ -264,24 +304,28 @@ header nav ul li a:hover {
     margin: 0%;
     margin-top: 5%;
 }
-.GIC .container{
+
+.GIC .container {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-.GIC .image{
+
+.GIC .image {
     width: 50%;
     display: flex;
     justify-content: center;
     text-align: center;
     position: relative;
 }
-.GIC .image img{
+
+.GIC .image img {
     width: 70%;
 }
-.GIC .message{
+
+.GIC form {
     width: 50%;
     height: auto;
     display: flex;
@@ -289,7 +333,8 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-.GIC .message label{
+
+.GIC form label {
     width: 50%;
     height: auto;
     display: flex;
@@ -297,7 +342,8 @@ header nav ul li a:hover {
     align-items: center;
     font-size: 30px;
 }
-.GIC .message input{
+
+.GIC form input {
     width: 80%;
     height: 7%;
     display: flex;
@@ -306,37 +352,54 @@ header nav ul li a:hover {
     font-size: 15px;
     margin-top: 10px;
 }
-#submit{
+
+.GIC form textarea {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#submit {
     width: 15%;
     height: 7%;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: palevioletred;
     color: white;
     font-size: 20px;
     color: black;
     border: solid 3px black;
 }
+
 .contact {
     width: 100%;
     background-color: whitesmoke;
 }
-.contact .container{
+
+.contact .container {
     text-align: center;
-    padding:0%;
+    padding: 0%;
 }
-.contact h2{
+
+.contact h2 {
     padding: 1%;
     font-size: 50px;
     font-style: italic;
     margin: 0%;
 }
-.contact p{
+
+.contact p {
     padding: 0%;
     font-size: 30px;
     margin-top: 0%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .contact ul {
     list-style: none;
     padding: 2%;
@@ -346,6 +409,7 @@ header nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 3px;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -358,4 +422,3 @@ footer.container {
     width: auto;
     margin: auto;
 }
-
