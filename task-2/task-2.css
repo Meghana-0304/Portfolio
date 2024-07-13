@@ -29,8 +29,8 @@ header .container {
 }
 
 header .logo img {
-    width: 15%;
-    height: 100%;
+    width: 10%;
+    height: 30%;
 }
 
 header nav ul {
@@ -100,28 +100,35 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
 }
+
 .overlay .icons {
     position: relative;
-    top: 85%;
+    top: 80%;
     left: 20%;
 }
-.overlay .icons a{
+
+.overlay .icons a {
     text-decoration: none;
     gap: 20%;
 }
+
 .overlay .icons i {
-    transition: trasnform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     color: black;
+    font-size: 50px;
 }
+
 .overlay .icons i:hover {
     color: palevioletred;
     cursor: pointer;
     transform: scale(1.5);
 }
+
 .overlay .profile {
     width: 50%;
     height: auto;
 }
+
 .overlay .profile img {
     width: 60%;
     height: auto;
@@ -129,7 +136,7 @@ header nav ul li a:hover {
     position: relative;
     top: 70%;
     left: 30%;
-    transition: trasnform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .overlay .profile img:hover {
@@ -163,7 +170,9 @@ header nav ul li a:hover {
     align-items: center;
     gap: 30px;
 }
-
+.about .bx i{
+    font-size: 50px;
+}
 .about .container p {
     font-size: 20px;
     font-weight: bold;
@@ -249,7 +258,7 @@ header nav ul li a:hover {
     align-items: center;
 }
 
-.project .container h2 {
+.project .container h3 {
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
@@ -386,7 +395,7 @@ header nav ul li a:hover {
     padding: 0%;
 }
 
-.contact h2 {
+.contact h3 {
     padding: 1%;
     font-size: 50px;
     font-style: italic;
@@ -421,4 +430,193 @@ footer {
 footer.container {
     width: auto;
     margin: auto;
+}
+
+/* for responsive interface */
+@media screen and (max-width:600px) {
+    header .logo img {
+        display: none;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+    .overlay .profile img{
+        width: 70%;
+        top: 40%;
+    }
+    .overlay .title h3 {
+        font-size: 20px;
+        top: 40%;
+        left: 50%;
+    }
+    .overlay .icons {
+        left: 50%;
+        top: 50%;
+    }
+    .overlay .icons i {
+        font-size: 20px;
+    }
+    .about{
+        margin-top: 140px;
+    }
+    .about h3{
+        font-size: 30px;
+    }
+    .about i{
+        font-size: 30px;
+    }
+    .about .container p{
+        font-size: 15px;
+    }
+    .about .container button{
+        font-size: 15px;
+    }
+    .about .container button i{
+        font-size: 15px;
+    }
+    .skills .container h3{
+        font-size: 30px;
+    }
+    .skills .skill-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills .skill p{
+        font-size: 15px;
+    }
+    .project .container h3{
+        font-size: 30px;
+    }
+    .project .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .work p{
+        width: 90%;
+    }
+    .GIC .container{
+        padding-bottom: 10px;
+    }
+    .GIC h3{
+        font-size: 30px;
+    }
+    .GIC .image{
+        display: none;
+    }
+    .GIC form label{
+        font-size: 20px;
+    }
+    .GIC form input{
+        width: 100%;
+        height: auto;
+    }
+    .GIC form  textarea{
+        width: 100%;
+    }
+    #submit{
+        width: 40%;
+        font-size: 10px;
+    }
+    #submit:hover{
+        font-size: 15px;
+    }
+    .contact h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:768px) and (max-width:885px) {
+    header .logo img {
+        width: 30%;
+        height: auto;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+    .overlay .profile img{
+        width: 70%;
+        top: 55%;
+    }
+    .overlay .title h3 {
+        font-size: 40px;
+        top: 60%;
+        left: 50%;
+    }
+    .overlay .icons {
+        left: 50%;
+        top: 70%;
+    }
+    .overlay .icons i {
+        font-size: 30px;
+    }
+    .about{
+        margin-top: 320px;
+    }
+    .about h3{
+        font-size: 30px;
+    }
+    .about i{
+        font-size: 30px;
+    }
+    .about .container p{
+        font-size: 15px;
+    }
+    .about .container button{
+        font-size: 15px;
+    }
+    .about .container button i{
+        font-size: 15px;
+    }
+    .skills .container h3{
+        font-size: 30px;
+    }
+    .skills .skill-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills .skill p{
+        font-size: 15px;
+    }
+    .project .container h3{
+        font-size: 30px;
+    }
+    .project .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .work p{
+        width: 90%;
+    }
+    .GIC .container{
+        padding-bottom: 10px;
+    }
+    .GIC h3{
+        font-size: 30px;
+    }
+    .GIC .image{
+        display: none;
+    }
+    .GIC form label{
+        font-size: 20px;
+    }
+    .GIC form input{
+        width: 100%;
+        height: auto;
+        border: solid 1px black;
+    }
+    .GIC form  textarea{
+        width: 100%;
+        border: solid 1px black;
+    }
+    #submit{
+        width: 20%;
+        height: 10%%;
+        font-size: 10px;
+    }
+    #submit:hover{
+        font-size: 10px;
+    }
+    .contact h3{
+        font-size: 30px;
+    }
 }
