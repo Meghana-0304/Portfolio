@@ -446,7 +446,7 @@ footer.container {
         top: 55%;
     }
     .overlay .title h3 {
-        font-size: 15px;
+        font-size: 10px;
         top: 60%;
         left: 50%;
     }
@@ -458,7 +458,7 @@ footer.container {
         font-size: 30px;
     }
     .about{
-        margin-top: 100px;
+        margin-top: 150px;
     }
     .about h3{
         font-size: 30px;
@@ -541,7 +541,7 @@ footer.container {
         top: 40%;
     }
     .overlay .title h3 {
-        font-size: 40px;
+        font-size: 20px;
         top: 40%;
         left: 50%;
     }
