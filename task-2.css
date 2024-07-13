@@ -446,7 +446,7 @@ footer.container {
         top: 55%;
     }
     .overlay .title h3 {
-        font-size: 40px;
+        font-size: 15px;
         top: 60%;
         left: 50%;
     }
@@ -541,7 +541,7 @@ footer.container {
         top: 40%;
     }
     .overlay .title h3 {
-        font-size: 20px;
+        font-size: 40px;
         top: 40%;
         left: 50%;
     }
@@ -617,29 +617,5 @@ footer.container {
     }
     .contact h3{
         font-size: 30px;
-    }
-}
-@media screen and (max-width:1024px){
-    header .logo img {
-        display: none;
-    }
-    .about{
-        margin-top: 300px;
-    }
-    .overlay .profile img{
-        width: 70%;
-        top: 50%;
-    }
-    .overlay .title h3 {
-        font-size: 30px;
-        top: 60%;
-        left: 50%;
-    }
-    .overlay .icons {
-        left: 50%;
-        top: 70%;
-    }
-    .overlay .icons i {
-        font-size: 20px;
     }
 }
